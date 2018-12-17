@@ -83,7 +83,7 @@ production:
   encoding: unicode
   pool: 5
   timeout: 5000
-  username: "[YOUR_POSTGRES_USERNAME]"
-  password: "[YOUR_POSTGRES_PASSWORD]"
-  database: "cat_list_production"
-  host:   "/cloudsql/[YOUR_INSTANCE_CONNECTION_NAME]"
+  username: "pets"
+  password: "password"
+  database: "pets"
+  host:   "/cloudsql/swift-synthesis-225722:us-central1:rails-database-instance"

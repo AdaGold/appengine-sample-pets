@@ -79,7 +79,11 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: pets_production
-  username: pets
-  password: <%= ENV['PETS_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+  username: "[YOUR_POSTGRES_USERNAME]"
+  password: "[YOUR_POSTGRES_PASSWORD]"
+  database: "cat_list_production"
+  host:   "/cloudsql/[YOUR_INSTANCE_CONNECTION_NAME]"
